@@ -3,6 +3,7 @@ import glob
 import os
 
 
+# 获取CelebFace数据集
 def get_celebface_dataset(celebface_data_dir, new_height=218, new_width=178, BATCH_SIZE=128, BUFFER_SIZE=200000):
     if not os.path.exists(celebface_data_dir):
         print("download data from https://www.kaggle.com/jessicali9530/celeba-dataset/home")
